@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+    <div class="container-fluid addHouseDiv"></div>
+    <h1 style="text-align: center;">Add House</h1>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <input class="btn btn-success" type="submit" value="Add House" style="width: 100%; margin-top: 30px; margin-bottom: 30px;" />
+    </form>
+</div>
+{% endblock %}

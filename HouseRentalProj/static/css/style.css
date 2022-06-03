@@ -1,0 +1,40 @@
+#navbarNav{
+    margin-left: 365px;
+}
+#myNav{
+    margin-left: 450px;
+}
+#myCarousel{
+    height: 300px;
+}
+.navbar{
+    background-color: azure;
+}
+.signupDiv{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 500px !important;
+}
+.signinDiv{
+    margin-top: 50px;
+    margin-bottom: 150px;
+    width: 500px !important;
+}
+.addRestaurantDiv{
+    margin-top: 50px;
+    width: 500px !important;
+}
+footer{
+    background-color: azure;
+    margin: 0px !important;
+}
+#div_id_review{
+    margin-right: 300px;
+}
+#id_review{
+    height: 5em;
+    width: 50em;
+}
+.favorites{
+    margin: 20px 20px 0 0 !important;
+}

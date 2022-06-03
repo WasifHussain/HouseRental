@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %} 
+<div class="container-fluid my-3 ">
+    <div class="row">
+    {% for house in houses %}
+    <div class="col-md-4">
+      <div class="card" >
+        <img src="{{ house.building_img.url }}" style="width:100%;height:250px ;"/>
+          <div class="card-body">
+            <h5 class="card-title">{{house.houseName}}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{house.address}}<br>{{house.city}}</h6>
+            <p class="card-text"><i><b>Rs.{{house.rent}} </i> </b></p>
+            <a href="house/{{house.id}}" class="btn btn-success">View Details</a>
+            <a href="/remove_from_favorites/{{house.id}}" class="btn btn-danger">Remove from favorites</a>
+          </div>
+        </div>
+    </div>
+  
+    {% endfor %}
+</div>
+</div>
+{% endblock %}

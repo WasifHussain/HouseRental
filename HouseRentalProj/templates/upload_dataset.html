@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% if error_messages %}
+        {{ error_messages.error }}
+    {% endif %}
+    <form enctype="multipart/form-data" action="/upload_dataset/" method="POST" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="submit" />
+    </form>
+{% endblock %}

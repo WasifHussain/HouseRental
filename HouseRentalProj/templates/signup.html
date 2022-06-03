@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<div class="container-fluid signupDiv">
+    <h1 style="text-align: center;">Create a new account</h1>
+    <form action="/signup/" method="POST">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <!-- {{ form.as_p }} -->
+        <input class="btn btn-primary" type="submit" value="Sign up" style="width: 100%; margin-top: 30px;" />
+    </form>
+    <span>Already have an account? <u><a  href="/signin">Sign in</a></u></span>
+</div>
+{% endblock %}
